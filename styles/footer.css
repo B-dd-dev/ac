@@ -1,0 +1,67 @@
+.footer-about-company,
+.footer-services,
+.footer-contact {
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-summary-title {
+    background-color: lightblue;
+    display: inline-block;
+    font-size: 25px;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+}
+
+.footer-services {
+    background-color: lightskyblue;
+    padding-bottom: 10px;
+}
+
+.footer-services-list,
+.footer-contact-list {
+    font-size: 20px;
+    background-color: lightseagreen;
+    padding: 10px 50px;
+}
+
+.footer-contact-social-media {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: blanchedalmond;
+}
+.footer-contact-social-media div {
+    padding: 0px 10px;
+    border-color: black;
+    border-style: solid;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    background-color: rgb(216, 216, 216);
+    padding-bottom: 20px;
+}
+
+.footer-summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    width: 80vh;
+    padding-bottom: 30px;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+}
+
+.footer-copyright { 
+    margin-top: 20px;
+}
