@@ -1,11 +1,10 @@
 .header-arrangement {
-    background-color: rgba(173, 216, 230, 0.5);
     display: flex;
     justify-content: space-between;
     left: 0;
     top: 0;
     right: 0;
-
+    z-index: 100;
     position: fixed;
     height: 80px;
     align-items: center;
@@ -17,7 +16,7 @@
 }
 
 .left-section {
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .right-section {
@@ -25,8 +24,8 @@
     align-items: center;
     justify-content: space-between;
     height: 90px;
-    width: 300px;
-    padding-right: 20px;
+    width: 400px;
+    margin-right: 30px;
 }
 
 .top-background-image {
@@ -36,6 +35,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    z-index: 0;
 }
 
 .title-message {
@@ -46,4 +47,23 @@
     font-size: 40px;
     text-align: center;
 
+}
+
+.header-logo {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.right-section a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    border-width: 2px;
+    padding: 10px 20px;
+    transition: 0.6s;
+}
+
+.right-section a:hover {
+    border: 1px solid black;
 }

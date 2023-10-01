@@ -1,14 +1,80 @@
-.content-about-us {
-    height: 400px;
-    background-color: aqua;
+section {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
-.content-ac-brand {
-    height: 400px;
-    background-color: bisque;
+.cover-page-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
 }
 
-.content-services {
-    height: 400px;
-    background-color: yellowgreen;
+.content-message {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    padding: 0px 20%;
+    transform: translate(-50%, -50%);
+}
+.content-message p {
+    margin: 0;
+    font-family: Arial;
+}
+
+.content-message p:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.content-message-title {
+    font-size: 3rem;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
+/* .navigation-previous-slide,
+.navigation-next-slide {
+    z-index: 100;
+    width: 30px;
+    position: absolute;
+    border: 3px solid black;
+    top: 50%;
+    padding: 30px;
+    transform: translate(0, -50%);
+}
+
+.navigation-previous-slide {
+    left: 20px;
+}
+.navigation-next-slide {
+    right: 20px;
+}
+
+.navigation-next-slide img:hover {
+    background-color: black;
+    cursor: pointer;
+    color: white;
+} */
+
+.navigation-button {
+    z-index: 100;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+}
+.navigation-previous-slide {
+    color: black;
+    width: 100px;
+    height: 100px;
+}
+
+.display-hidden-title {
+    display: none;
 }
