@@ -9,3 +9,8 @@ footer {
     border-top-style: solid;
     padding-top: 20px;
 }
+
+footer a {
+    text-decoration: none;
+    color: black;
+}

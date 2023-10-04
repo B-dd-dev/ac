@@ -1,18 +1,24 @@
 let cover = 0;
-let coverPageImage = ['img_1', 'img_2', 'img_3', 'img_4'];
 setInterval(function() {
-    document.getElementById('js-display-image-onboard').src = `images/${coverPageImage[cover]}.png`
     cover++;
-    removeHiddenTitle();
+    hideTitle();
     document.querySelector(`.title-${cover}`).classList.remove('display-hidden-title');
     if (cover > 3){
         cover = 0;
     }
-}, 5000);
+}, 10000);
 
-function removeHiddenTitle() {
-    document.querySelector(`.tittle-1`).classList.add('.display-hidden-title');
-    document.querySelector(`.tittle-2`).classList.add('.display-hidden-title');
-    document.querySelector(`.tittle-3`).classList.add('display-hidden-title');
-    document.querySelector(`.tittle-4`).classList.add('display-hidden-title');
+function hideTitle() {
+    if (!document.querySelector('.title-1').classList.contains('display-hidden-title')) {
+        document.querySelector('.title-1').classList.add('display-hidden-title');
+    }
+    if (!document.querySelector('.title-2').classList.contains('display-hidden-title')) {
+        document.querySelector('.title-2').classList.add('display-hidden-title');
+    }
+    if (!document.querySelector('.title-3').classList.contains('display-hidden-title')) {
+        document.querySelector('.title-3').classList.add('display-hidden-title');
+    }
+    if (!document.querySelector('.title-4').classList.contains('display-hidden-title')) {
+        document.querySelector('.title-4').classList.add('display-hidden-title');
+    }
 }
