@@ -1,0 +1,41 @@
+.company-contact-section {
+    font-family: 'Overpass', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: margin 0.5;
+}
+
+.contact-description {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 0px 40px;
+}
+
+.contact-description div {
+    color: #1E5AA4;
+}
+
+.contact {
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+.contact-address,
+.contact-email,
+.contact-number {
+    text-align: left;
+    display: inline;
+    border-bottom: rgb(185, 185, 185);
+    border-bottom-style :solid;
+    border-width: 1px;
+    margin: 5px;
+    padding-bottom: 5px;
+}
+
+.contact div i {
+    font-size: 25px;
+    color: #1E5AA4;
+    margin-right: 20px;
+}

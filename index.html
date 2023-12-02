@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>AirCond Service Company</title>
 
         <!-- CSS -->
@@ -9,68 +11,276 @@
         <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Overpass&display=swap" rel="stylesheet">
         <!-- font-family: 'Dela Gothic One', cursive;
              font-family: 'Overpass', sans-serif; -->
+        <link rel="stylesheet" href="styles/general.css">
         <link rel="stylesheet" href="styles/header.css">
-        <link rel="stylesheet" href="styles/footer-copyright.css">
-        <link rel="stylesheet" href="styles/content.css">
-        <link rel="stylesheet" href="styles/html.css">
+        <link rel="stylesheet" href="styles/cover_page.css">
+        <link rel="stylesheet" href="styles/company_services.css">
+        <link rel="stylesheet" href="styles/company_contact.css">
+        <link rel="stylesheet" href="styles/footer.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <header>
-            <div class="header-arrangement">
+            <div class="header-arrangement" id="header">
                 <div class="header-logo">
                     LOGO
                 </div>
                 <div class="header-categories">
-                    <a href="index.html">Home</a>
+                    <a href="#cover-page">Home</a>
                     <a href="about.html">About</a>    
-                    <a href="services.html">Services</a>    
-                    <a href="contact.html">Contact</a>    
-                    <a href="login.html">Login</a>    
+                    <a href="#service">Services</a>    
+                    <a href="#contact">Contact</a>
+                    <a href="login.html">Login</a>
                 </div>
+                
+                <input type="checkbox" id="check">
+                <label for="check" class="icons">
+                    <i class='bx bx-menu' id="open-menu"></i>
+                    <i class='bx bx-x' id="close-menu"></i>
+                </label>
             </div>
         </header>
 
-        <section class="cover-page-container">
-            <div class="cover-page-section title-1">
-                <img src="images/steven-ungermann-Bo-fW5KvdQI-unsplash.jpg">
-                <div class="content-message">
-                    <p class="content-message-title">Title 1</p>
-                    <p class="content-message-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    <button class="title-button">Start Your Booking Today</button>
+        <!-- Cover Page -->
+        <section class="cover-page-section" id="cover-page">
+            <img src="images/asia-culturecenter-8Vhl4KvlJE8-unsplash.jpg">
+            <div class="content-message">
+                <p class="content-message-title">Title 1</p>
+                <p class="content-message-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <button class="title-button">Start Your Booking Today</button>
+            </div>
+        </section>
+        
+        <!-- About Company -->
+        <section class="about-company-section">
+            <div>
+                <i class='bx bx-book-open'></i> 
+            </div>
+        </section>
+        <hr>
+        <!-- Service & Pricing -->
+        <section class="company-services-section" id="service">
+            <div class="section-title">
+                <img src="images/icons/toolbox_663524.png">
+                Services
+            </div>
+            <div class="section-description">
+                We provide quality maintenance contract service for all types of residential and commercial air conditioner units in Singapore.
+            </div>
+            <div class="service-button">
+                <button id="button1">General Aircon Service</button>
+                <button id="button2">Chemical Cleaning Service</button>
+                <button id="button3">Chemical Overhaul Service</button>
+                <button id="button4">Aircon Gas Top Up Service</button>
+                <button id="button5">Checking & Troubleshooting</button>
+            </div>
+            <div class="services-description">
+                <div class="general-aircon-service description hidden" id="hiddenElement1">
+                    <div class="service-job-scope">
+                        <h4>General Aircon Service</h4>
+                        <div class="scope-table">
+                            <table>
+                                <th colspan="2">Scope of Work</th>
+                                <tbody>
+                                    <tr><td><i class='bx bx-check'></i></td><td>Clean & Check air filter and cover</td></tr>
+                                    <tr><td><i class='bx bx-check'></i></td><td>Check Bio-pure / Dedorizing Filter</td></tr>                                    
+                                    <tr><td><i class='bx bx-check'></i></td><td>Clean & Check indoor cooling coil</td></tr>
+                                    <tr><td><i class='bx bx-check'></i></td><td>Flush Drainage System</td></tr>
+                                    <tr><td><i class='bx bx-check'></i></td><td>Check Condenser unit</td></tr>
+                                    <tr><td><i class='bx bx-check'></i></td><td>Check compressor suction and discharge pressure</td></tr>
+                                    <tr><td><i class='bx bx-check'></i></td><td>Check and lubricate motor bearing (<strong>if necessary</strong>)</td></tr>
+                                    <tr><td><i class='bx bx-check'></i></td><td>Chemical Cleaning is <strong>NOT</strong> included</td></tr>
+                                    <tr><td><i class='bx bx-check'></i></td><td>Check in R22 gas and R410 gas is <strong>NOT</strong> included. It is comsumable by the customer</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="service-pricing">
+                        <h4>Price</h4>
+                        <table>
+                            <thead>
+                                <tr><th>Number of Air-Con Units</th><th>1 Time Service</th><th>Tri-Yearly (3X)</th><th>Quarterly (4X)</th></tr>
+                            <thead>
+                            <tbody>
+                                <tr><td>1 Fan Coil Unit</td><td>$40</td><td>&ndash;</td><td>&ndash;</td></tr>
+                                <tr><td>2 Fan Coil Units</td><td>$60</td><td>$160</td><td>$180</td></tr>
+                                <tr><td>3 Fan Coil Units</td><td>$75</td><td>$200</td><td>$240</td></tr>
+                                <tr><td>4 Fan Coil Units</td><td>$90</td><td>$240</td><td>$300</td></tr>
+                                <tr><td>5 Fan Coil Units</td><td>$105</td><td>$300</td><td>$380</td></tr>
+                                <tr><td>6 Fan Coil Units</td><td>$120</td><td>$350</td><td>$440</td></tr>
+                            </tbody>
+                        </table>
+                        <p>
+                            Note:<br>
+                            For 7 Fan coil units & above, a sepatate quotation shall issue upon request.<br>    
+                            Above price for residences only.
+                        </p>
+                    </div>
+                </div>
+                <div class="chemical-cleaning-service description hidden" id="hiddenElement2">
+                    <div class="service-job-scope">
+                        <h4>Chemical Cleaning Service</h4>
+                        <div class="scope-table">
+                            <table>
+                                <th colspan="2">Scope of Work</th>
+                                <tbody>
+                                    <tr><td><i class='bx bx-check'></i></td><td>Cleaning & Checking air filter, front panel and cover</td></tr>
+                                    <tr><td><i class='bx bx-check'></i></td><td>Checking, dedorizing and purifying filter</td></tr>                                    
+                                    <tr><td><i class='bx bx-check'></i></td><td>Cleaning & Checking indoor evaporator coil</td></tr>
+                                    <tr><td><i class='bx bx-check'></i></td><td>Cleaning & Checking indoor drainage tray</td></tr>
+                                    <tr><td><i class='bx bx-check'></i></td><td>Vacuuming of drainage system</td></tr>
+                                    <tr><td><i class='bx bx-check'></i></td><td>Checking fan bearing and lubricant (<strong>if necessary</strong>)</td></tr>
+                                    <tr><td><i class='bx bx-check'></i></td><td>Checking compressor suction and discharge pressure</td></tr>
+                                    <tr><td><i class='bx bx-check'></i></td><td>Aircon gas top up is <strong>NOT</strong> included</td></tr>
+                                    <tr><td><i class='bx bx-check'></i></td><td>Tightening electrical contacts</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="service-pricing">
+                        <h4>Price</h4>
+                        <table>
+                            <thead>
+                                <tr><th>Number of Air-Con Units</th><th>Price</th></tr>
+                            <thead>
+                            <tbody>
+                                <tr><td>1 Fan Coil Unit</td><td>$90</td>
+                                <tr><td>2 Fan Coil Units</td><td>$170</td>
+                                <tr><td>3 Fan Coil Units</td><td>$240</td>
+                                <tr><td>4 Fan Coil Units</td><td>$300</td>
+                                <tr><td>5 Fan Coil Units</td><td>$350</td>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="chemical-overhaul-service description hidden" id="hiddenElement3">
+                    <div class="service-job-scope">
+                        <h4>Chemical Overhaul Service</h4>
+                        <div class="scope-table">
+                            <table>
+                                <th colspan="2">Scope of Work</th>
+                                <tbody>
+                                    <tr><td><i class='bx bx-check'></i></td><td>Disconnect of electrical wiring and refrigerant piping</td></tr>
+                                    <tr><td><i class='bx bx-check'></i></td><td>Dismate down the whole fancoil unit</td></tr>                                    
+                                    <tr><td><i class='bx bx-check'></i></td><td>Dismantle of cooling coil and fancoil parts</td></tr>
+                                    <tr><td><i class='bx bx-check'></i></td><td>Cleans pipes, blower wheel and drain pans with appropriate chemicals</td></tr>
+                                    <tr><td><i class='bx bx-check'></i></td><td>Reassemble and reinstall of fancoil unit</td></tr>
+                                    <tr><td><i class='bx bx-check'></i></td><td>Connect electrical contact and refrigerant piping</td></tr>
+                                    <tr><td><i class='bx bx-check'></i></td><td>Check control and thermostats</td></tr>
+                                    <tr><td><i class='bx bx-check'></i></td><td>Test run system</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="service-pricing">
+                        <h4>Price</h4>
+                        <table>
+                            <thead>
+                                <tr><th>Number of Air-Con Units</th><th>9000 btu - 12000 btu Capacity</th></tr>
+                            <thead>
+                            <tbody>
+                                <tr><td>1 Fan Coil Unit</td><td>$160</td>
+                                <tr><td>2 Fan Coil Units</td><td>$300</td>
+                                <tr><td>3 Fan Coil Units</td><td>$420</td>
+                                <tr><td>4 Fan Coil Units</td><td>$520</td>
+                                <tr><td>5 Fan Coil Units</td><td>$600</td>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="aircon-gas-topup-service description hidden" id="hiddenElement4">
+                    <div class="service-job-scope">
+                        <h4>Aircon Gas Top Up Service</h4>
+                        <div class="scope-table">
+                            <table>
+                                <th colspan="2">Scope of Work</th>
+                                <tbody>
+                                    <tr><td><i class='bx bx-check'></i></td><td>Cleaning & Checking air filter, front panel and cover</td></tr>
+                                    <tr><td><i class='bx bx-check'></i></td><td>Checking, dedorizing and purifying filter</td></tr>                                    
+                                    <tr><td><i class='bx bx-check'></i></td><td>Cleaning & Checking indoor evaporator coil</td></tr>
+                                    <tr><td><i class='bx bx-check'></i></td><td>Cleaning & Checking indoor drainage tray</td></tr>
+                                    <tr><td><i class='bx bx-check'></i></td><td>Vacuuming of drainage system</td></tr>
+                                    <tr><td><i class='bx bx-check'></i></td><td>Checking fan bearing and lubricant (<strong>if necessary</strong>)</td></tr>
+                                    <tr><td><i class='bx bx-check'></i></td><td>Checking compressor suction and discharge pressure</td></tr>
+                                    <tr><td><i class='bx bx-check'></i></td><td>Aircon gas top up (<strong>chargeable, if necessary</strong>)</td></tr>
+                                    <tr><td><i class='bx bx-check'></i></td><td>Tightening electrical contacts</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="service-pricing">
+                        <h4>Price</h4>
+                        <table>
+                            <thead>
+                                <tr><th>Gas Type</th><th>Price</th></tr>
+                            <thead>
+                            <tbody>
+                                <tr><td>R22 Gas</td><td>$50 - $80</td>
+                                <tr><td>R410 Gas</td><td>$90 - $120</td>
+                            </tbody>
+                        </table>
+                        <p style="margin-top: 40px;">
+                            We will help you refill R22 or R410, the refrigerant of choice, for your air conditioners.
+                            The table shows you the rates for refilling air conditioner gas or coolant.
+                        </p>
+                    </div>
+                </div>
+                <div class="checking-troubleshooting description hidden" id="hiddenElement5">
+                    <div class="service-job-scope">
+                        <h4>Checking & Troubleshooting</h4>
+                        <div class="scope-table">
+                            <table>
+                                <th colspan="2">Scope of Work</th>
+                                <tbody>
+                                    <tr><td><i class='bx bx-check'></i></td><td>Troubleshooting of faults in air conditioning system</td></tr>
+                                    <tr><td><i class='bx bx-check'></i></td><td>Prepare service report on fault(s) found and recommended repair action(s)</td></tr>                                    
+                                    <tr><td><i class='bx bx-check'></i></td><td>Prepare appropriate quotation on repairs parts required</td></tr>
+                                    <tr><td><i class='bx bx-check'></i></td><td>Explain and educate customer on finding and recommendation</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="service-pricing">
+                        <h4>Price</h4>
+                        <p>
+                            We provide complimentary checking and troubleshooting for your aircon problem. However, we charge a transportation charge of <strong>SGD$40.00</strong>. <br>
+                            Please note that the transportation charge will only be waived off by offsetting against any charges incurred when engaging our services to rectify your aircon problems.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="cover-page-section title-2 display-hidden-title">
-                <img src="images/steven-ungermann-Bo-fW5KvdQI-unsplash.jpg">
-                <div class="content-message">
-                    <p class="content-message-title">Title 2</p>
-                    <p class="content-message-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    <button class="title-button">Price & Services</button>
+        </section>
+        <hr>
+        <!-- Contact -->
+        <section class="company-contact-section">
+            <div class="contact-description">
+                <div>
+                    Get in touch with us now
                 </div>
+                <p>We love to hear from you, please feel free to either Whatapps, call or drop us an email.<br>We will get back to you as soon as possible</p>
             </div>
-            <div class="cover-page-section title-3 display-hidden-title">
-                <img src="images/steven-ungermann-Bo-fW5KvdQI-unsplash.jpg">
-                <div class="content-message">
-                    <p class="content-message-title">Title 3</p>
-                    <p class="content-message-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    <button class="title-button">Customer Reviews & Galleries</button>
-                </div>
-            </div>
-            <div class="cover-page-section title-4 display-hidden-title">
-                <img src="images/steven-ungermann-Bo-fW5KvdQI-unsplash.jpg">
-                <div class="content-message">
-                    <p class="content-message-title">Title 4</p>
-                    <p class="content-message-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    <button class="title-button">Login</button>
-                </div>
+            <div class="contact" id="contact">
+                <div class="contact-address">
+                    <i class='bx bx-home-smile'></i>
+                    7 Gambas Crescent #08-28 ARK@Gambas Singapore 757087</div>
+                <div class="contact-email">
+                    <i class='bx bx-envelope' ></i>
+                    enquiry@ecoolingaircon.com.sg</div>
+                <div class="contact-number">
+                    <i class='bx bx-phone-call' ></i>
+                    +65 9899 3794</div>
             </div>
         </section>
 
         <footer>
-            <div class="footer-copyright">
+            <div>
                 Copyright &copy; AirCond Service Company &#124; <a href="#">Terms and Conditions</a> &#124; <a href="#">Privacy Policy</a>
             </div>
         </footer>
 
-        <script src="scripts/cover-page.js"></script>
+        <script type="text/javascript" src="scripts/header.js"></script>
+        <script type="text/javascript" src="scripts/service.js"></script>
     </body>
 </html>

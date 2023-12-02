@@ -1,66 +1,25 @@
-.footer-about-company,
-.footer-services,
-.footer-contact {
-    background-color: aquamarine;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+footer {
+    background-color: rgb(44, 44, 44);
+    font-family: 'Overpass', sans-serif;
+    color: white;
+    width: 100%;
+    height: 60px;
+    position:static;
 }
 
-.footer-summary-title {
-    background-color: lightblue;
-    display: inline-block;
-    font-size: 25px;
-    width: 200px;
+footer div {
     text-align: center;
-    padding: 10px;
-    margin: 10px;
-    border-bottom-color: black;
-    border-bottom-style: solid;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.footer-services {
-    background-color: lightskyblue;
-    padding-bottom: 10px;
+footer div a {
+    text-decoration: none;
+    color: white;
 }
 
-.footer-services-list,
-.footer-contact-list {
-    font-size: 20px;
-    background-color: lightseagreen;
-    padding: 10px 50px;
-}
-
-.footer-contact-social-media {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    background-color: blanchedalmond;
-}
-.footer-contact-social-media div {
-    padding: 0px 10px;
-    border-color: black;
-    border-style: solid;
-}
-
-.footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 30px;
-    padding-bottom: 20px;
-}
-
-.footer-summary {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 20px;
-    width: 80vh;
-    padding-bottom: 30px;
-    border-bottom-color: black;
-    border-bottom-style: solid;
-}
-
-.footer-copyright { 
-    margin-top: 20px;
+footer div a:hover {
+    text-decoration: underline;
 }

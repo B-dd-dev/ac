@@ -1,0 +1,130 @@
+.company-services-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  font-family: 'Overpass', sans-serif;
+  padding: 10px;
+}
+.section-title,
+.description h4 {
+  font-size: 45px;
+  font-weight: bold;
+  color: #1E5AA4;
+}
+.company-services-section img {
+  width: 90px;
+  rotate: -15deg;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-bottom: 25px;
+}
+.section-description {
+  font-size: 25px;
+  width: 800px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.service-button {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 5px;
+}
+.service-button button {
+  padding: 20px 10px;
+  font-size: 18px;
+  background-color: rgb(209, 209, 209);
+  border-radius: 15px;
+  border: none;
+}
+.service-button button:hover {
+  cursor: pointer;
+  background-color: rgb(233, 233, 233);
+}
+
+.service-job-scope {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.scope-table table {
+  font-size: 30px;
+  border-spacing: 0;
+  color: black;
+  font-weight: 400;
+  width: 1200px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.6);
+}
+.scope-table table i {
+  width: 40px;
+  text-align: center;
+}
+.scope-table table th {
+  text-align: center;
+  background-color: #1E5AA4; 
+  color: white;
+  font-weight: 400;
+}
+.scope-table table tr:nth-child(odd) {
+  background-color: rgb(226, 226, 226);
+}
+
+.service-pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  padding-bottom: 10px;
+}
+.service-pricing table {
+  font-size: 30px;
+  text-align: center;
+  width: 1200px;
+  border-spacing: 0px;
+  color: black;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.6);
+  font-weight: 400;
+}
+.service-pricing table th {
+  background-color: #1E5AA4; 
+  color: white;
+  font-weight: 400;
+}
+.service-pricing table tr:nth-child(odd) {
+  background-color: rgb(226, 226, 226);
+}
+.service-pricing p {
+  font-size: 25px;
+  padding: 0;
+  margin: 10px 0;
+  color: black;
+  text-align: center;
+  width: 850px;
+}
+.service-pricing p strong {
+  color: #1E5AA4;
+  text-decoration: underline;
+}
+.service-pricing h4 {
+  margin-bottom: 20px;
+}
+
+
+
+.description h4 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.hidden {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s, opacity 1s;
+} 
+.hidden.visible {
+    opacity: 1;
+    max-height: 1500px; /* Adjust the maximum height as needed */
+  }
